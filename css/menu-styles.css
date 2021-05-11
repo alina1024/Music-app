@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Pangolin&display=swap');
+body
+{
+    margin: 0px;
+}
+.menu-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.text{
+    font-family: 'Dela Gothic One', cursive;
+    color:#97CD9F;
+    background-position: left;
+    font-size: 3.1em;
+}
+.main-menu img{
+    width: 2.5em;
+}
+.main-container{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(199, 146, 226, 0.815);
+}
+.list-menu{
+    background-color:#8a948c;
+    display: block;
+    position: fixed;
+    top: 4em;
+    right: 0px;
+    height: 100vh;
+    width: 50%;
+    border-radius: 20px 0px 0px 0px;
+    transform: translateX(100%);
+    transition: 1s;
+}
+.list-menu li{
+    list-style: none;
+    margin-top: 1em;
+}
+.list-menu li {
+    font-family: 'Poiret One', cursive;
+    color: #000000;
+    font-size: 1.2em;
+}
+.list-menu li img{
+    width: 8em;
+}
+.active-menu{
+    transform: translateX(0%);
+}
+.tus-canciones-container{
+    background-color: #EEEEEE;
+    font-family: 'Monoton', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    background-position: center;
+}
+.tus-canciones-container h2{
+    font-size: 1.7em;
+}
+.tus-canciones-container img{
+    width: 11.5em;
+}
+.play-list{
+    margin-top: 1.4em;
+    margin-right: 5%;
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.play-list img{
+    width: 10em;
+    height: 10em;
+}
+.other-play-list{
+    display: none;
+    position: fixed;
+}
+@media screen and (min-width:720px) and (orientation:landscape)
+{
+    #menu-btn{
+        display: none;
+    }
+    .list-menu{
+        transform: translateX(0%);
+        position: static;
+        width: 100%;
+        height: auto;
+        text-align: left;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        padding: 0px;
+        margin: 0px;
+    }
+    .list-menu li a img{
+        width: 3em;
+    }
+    .main-menu{
+        width: 15%;
+    }
+    .container-tus-canciones{
+        width: 100%;
+        display: flex;
+    }
+    .tus-canciones-container{
+        width: 35%;
+        height: 100%;
+    }
+    .play-list{
+        width: 65%;
+        height: 100%;
+    }
+    .other-play-list{
+        display: flex;
+        flex-wrap: wrap;
+        background-position: center;
+        justify-content: space-between;
+        padding-top: 2.3em;
+        margin-right: 5em;
+        margin-left: 5em;
+    }
+    .other-play-list img{
+        width: 9em;
+        height: 10em;
+        margin-left: 1em;
+        margin-right: 1em; 
+    }
+}

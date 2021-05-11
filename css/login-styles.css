@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poiret One', cursive;
+    background-color: rgba(199, 146, 226, 0.815);
+}
+.main-container {
+    height: 95%;
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+}
+.logo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-container h1{
+    font-family: 'Dela Gothic One', cursive;
+    color:#97CD9F;
+    background-position: center;
+    font-size: 4.2em;
+}
+.logo-container img{
+     width: 19.5em;
+     background-position: center;
+     min-height: 25%;
+     justify-content: space-evenly;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+.form-container h2{
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
+.login-btn{
+    margin-bottom: 1em;
+    margin-top: 1em;
+    width: 100%;
+    background-color: #97CD9F;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    border-radius: 5px;
+    border: 0px;
+    background-position: center;
+}
+
+.input-container input{
+    height: 1.5em;
+    border-radius: 5px;
+    border: 0px;
+}
+.music-link{
+    color: rgb(139, 7, 226);
+    
+}
+@media screen and (min-width:720px) and (orientation:landscape)
+{
+    .main-container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .logo-container img{
+        width: 70%;
+        height: 100%;
+        background-position: center;
+    }
+    .logo-container h1{
+        background-position: center;
+        font-size: 5em;
+    }
+    .form-container{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .form-container h2{
+        display: block;
+        color: mintcream;
+        font-size: 3em;
+        background-position: center;
+    }
+    .form{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .login-btn{
+        width: 40%;
+        height: 1.9em;
+        margin-top: 1.5em;
+    }
+    .input-container{
+        width: 70%;
+        font-size: 1.7em;
+    }
+    .input-container input{
+        height: 2em;
+        border-radius: 5px;
+        border: 0px;
+    }
+
+}

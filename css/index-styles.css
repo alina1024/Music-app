@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poiret One', cursive;
+    background-color: rgba(199, 146, 226, 0.815);
+}
+.main-container {
+    height: 95%;
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portada-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portada-container h1{
+    font-family: 'Dela Gothic One', cursive;
+    color:#97CD9F;
+    background-position: center;
+    font-size: 4.2em;
+    margin: 0.4em;
+}
+.portada-container img{
+     width: 19.5em;
+     background-position: center;
+     min-height: 25%;
+     justify-content: space-evenly;
+     padding-top: 0.2em;
+     margin: 0.4em;
+}
+.space{
+    margin-top: 3em;
+}
+.go-btn{
+    font-size: 1.5em;
+    background-color: #792bdf;
+    width: 100%;
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    border-radius: 5px;
+    border: 0px;
+    color: cornsilk;
+}
